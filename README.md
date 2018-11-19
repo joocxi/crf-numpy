@@ -1,5 +1,5 @@
 # Conditional Random Field
-This is an implementation of simple CRF using NumPY. The model was trained and tested on OCR, a dataset for handwritten words.
+This is an implementation of a simple CRF using NumPy. The model was trained and tested on OCR, a dataset for handwritten words.
 
 ## Dataset
 http://ai.stanford.edu/~btaskar/ocr/letter.data.gz
