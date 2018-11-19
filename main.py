@@ -3,18 +3,18 @@ from crf import CRF
 from load_data import load_data, create_train_val_test_split
 
 
-# TODO: global config
+# global config
 data_path = "data/letter.data"
 input_size = 128
 classes = 26
 
-# TODO: init trainer
+# init trainer
 dataset = load_data(data_path)
 data = create_train_val_test_split(dataset)
 
 model = CRF(input_size, classes)
 optimizer = Optimizer(model, data)
 
-# TODO: train/val
+# train/val/test
 optimizer.train()
 optimizer.test()

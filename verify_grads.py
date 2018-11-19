@@ -72,4 +72,3 @@ def verify_gradients():
 
 if __name__ == "__main__":
     verify_gradients()
-

@@ -2,10 +2,10 @@ import numpy as np
 import pdb
 
 np.random.seed(2018)
-
 letters = 'abcdefghijklmnopqrstuvwxyz'
 input_size = 128
 lengths = [5502, 688, 687]
+
 
 def load_data(file_path):
     with open(file_path, "r") as fp:
@@ -53,6 +53,7 @@ def create_train_val_test_split(dataset):
         sample_idx += 1
 
     return x_train, x_val, x_test, y_train, y_val, y_test
+
 
 if __name__ == "__main__":
     dataset = load_data("data/letter.data")

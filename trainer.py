@@ -34,7 +34,6 @@ class Optimizer(object):
 
 
     def validate(self):
-        # TODO: 
         errors = []
         for input, target in tqdm(zip(self.x_val, self.y_val), total=len(self.y_val)):
             pred = self.model.predict(input)
@@ -43,7 +42,7 @@ class Optimizer(object):
 
         errors = np.hstack(errors)
         errors = np.mean(errors)
-        print ("validation error: %f" % errors)
+        print ("validation accuracy: %f" % errors)
 
 
     def test(self):
@@ -55,4 +54,4 @@ class Optimizer(object):
 
         errors = np.hstack(errors)
         errors = np.mean(errors)
-        print ("test error: %f" % errors)
+        print ("test accuracy: %f" % errors)
